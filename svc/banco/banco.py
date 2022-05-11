@@ -36,5 +36,5 @@ class Banco:
         pass
 
 
-def banco():
-    return None
+    def banco():
+        return None

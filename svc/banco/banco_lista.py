@@ -1,3 +1,5 @@
+from aulapoo.svc.conta.conta_especial import ContaEspecial
+
 
 class BancoLista:
     def __init__(self):
@@ -39,4 +41,13 @@ class BancoLista:
 
     def transferir(self, origem, destino, valor):
         pass
+
+    def renderBonus(self,numero,valor):
+        conta = self.procurar_conta(numero)
+        conta = ContaEspecial
+        if conta:
+            conta.creditar(valor)
+        else:
+            print('Conta Inexistente!')
+
 
